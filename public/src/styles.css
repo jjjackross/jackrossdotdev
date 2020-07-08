@@ -1,0 +1,19 @@
+/* You can add global styles to this file, and also import other style files */
+/* Quick Base Plate */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    vertical-align: top;
+    background-color: var(--white);
+    /* outline: 1px solid pink; */
+}
+
+/* Creating variables for the color palette so I don't have to memorize their hex color codes */
+:root {
+    --dark-blue: #495867;
+    --medium-blue: #577399;
+    --light-blue: #ACC2D5;
+    --white: #F7F7FF;
+    --gold: #D9D0BB;
+}

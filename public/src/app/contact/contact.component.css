@@ -1,0 +1,5 @@
+main {
+    text-align: center; /* Centering the google fom */
+    overflow: auto;
+    margin: 25px 0; /* Adding distance between form & navbar */
+}

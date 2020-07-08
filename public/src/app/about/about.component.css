@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    vertical-align: top;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    /* outline: 1px solid pink; */
+}
+
+#body-container {
+    padding: 0 5vw;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(7, 10vh);
+    grid-template-areas:
+    ". a a a b b b b b b b ."
+    ". a a a b b b b b b b ."
+    ". a a a b b b b b b b ."
+    ". a a a b b b b b b b ."
+    ". a a a b b b b b b b ."
+    ". a a a b b b b b b b ."
+    "resume resume resume . . . . . . . github linkedin";
+    gap: 10px;
+    margin-top: 5vh;
+}
+
+.a {
+    grid-area: a;
+    background-color: red;
+    text-align: center;
+}
+
+.b {
+    grid-area: b;
+    background-color: orange;
+}
+
+.block {
+    background-color: var(--medium-blue);
+    border: 2px solid var(--dark-blue);
+    border-radius: 15px;
+}
+
+.a img {
+    border-radius: 100px;
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    margin: 20px 0;
+}
+
+#location {
+    display: block;
+    width: 40px;
+    height: 40px;
+}
+
+span {
+    display: inline;
+}
+
+h2 {
+    background-color: var(--medium-blue);
+    font-family: 'Poppins', sans-serif;
+    color: var(--white);
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+.a a {
+    background-color: var(--medium-blue);
+    color: var(--white);
+    font-size: 3vmin;
+}
+
+.a a:hover {
+    color: var(--light-blue);
+}
+
+.a a:active {
+    color: var(--dark-blue);
+    text-decoration: underline;
+}
+
+.a p, q {
+    background-color: var(--medium-blue);
+    color: var(--white);
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 30px;
+}
+
+.b {
+    padding: 25px;
+}
+
+.b h2 {
+    color: var(--gold);
+}
+
+.b h2:first-child {
+    margin-bottom: 0px;
+}
+
+.b h2:not(:first-child) {
+    margin-top: 25px;
+    margin-bottom: 0;
+}
+
+.b ul {
+    color: var(--white);
+    font-family: 'Poppins', sans-serif;
+    margin-left: 25px;
+}
+
+.b ul li {
+    background-color: var(--medium-blue);
+}
+
+.footer {
+    margin-top: 20px;
+}
+
+.resume {
+    grid-area: resume;
+}
+
+#github-logo {
+    grid-area: github;
+}
+
+#linkedin-logo {
+    grid-area: linkedin;
+}
+
+.social-icon {
+    width: 7vmin;
+    height: 7vmin;
+}
+
+#github-logo path {
+    fill: var(--medium-blue);
+}
+
+#github-logo:hover path {
+    fill: var(--light-blue);
+}
+
+#github-logo:active path {
+    fill: var(--dark-blue);
+}
+
+#linkedin-logo path {
+    fill: var(--medium-blue);
+}
+
+#linkedin-logo:hover path {
+    fill: var(--light-blue);
+}
+
+#linkedin-logo:active path {
+    fill: var(--dark-blue);
+}
+
+a {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+    color: var(--medium-blue);
+    text-decoration: none;
+    font-size: 5vmin;
+}
+
+a:hover {
+    color: var(--light-blue);
+    cursor: pointer;
+}
+
+a:active {
+    color: var(--dark-blue);
+    text-decoration: underline;
+}
