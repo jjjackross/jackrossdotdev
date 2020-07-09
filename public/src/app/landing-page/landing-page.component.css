@@ -48,7 +48,7 @@ div .bg {
 }
 
 h1 {
-    color: var(--gold);
+    color: var(--gunMetal);
     font-family: 'Poppins', sans-serif;
     font-size: 15vmin;
     text-shadow: -3px 3px 3px rgba(73,88,103,.4);
@@ -84,33 +84,33 @@ main h1:nth-child(3) {
 }
 
 #github-logo path {
-    fill: var(--medium-blue);
+    fill: var(--blueYonder);
 }
 
 #github-logo:hover path {
-    fill: var(--light-blue);
+    fill: var(--iceberg);
 }
 
 #github-logo:active path {
-    fill: var(--dark-blue);
+    fill: var(--blackCoral);
 }
 
 #linkedin-logo path {
-    fill: var(--medium-blue);
+    fill: var(--blueYonder);
 }
 
 #linkedin-logo:hover path {
-    fill: var(--light-blue);
+    fill: var(--iceberg);
 }
 
 #linkedin-logo:active path {
-    fill: var(--dark-blue);
+    fill: var(--blackCoral);
 }
 
 a {
     font-family: 'Poppins', sans-serif;
     font-weight: 200;
-    color: var(--medium-blue);
+    color: var(--blueYonder);
     text-decoration: none;
     font-size: 5vmin;
     grid-column: 1 / 2;
@@ -118,11 +118,11 @@ a {
 }
 
 a:hover {
-    color: var(--light-blue);
+    color: var(--iceberg);
     cursor: pointer;
 }
 
 a:active {
-    color: var(--dark-blue);
+    color: var(--blackCoral);
     text-decoration: underline;
 }

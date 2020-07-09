@@ -10,20 +10,20 @@
 #nav-container {
     padding: 0 5vw;
     background-clip: padding-box;
-    background-color: var(--light-blue);
+    background-color: var(--iceberg);
 }
 
 nav {
     display: grid;
     grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
-    background-color: var(--light-blue);
+    background-color: var(--iceberg);
     width: auto;
     gap: 5vmin;
 }
 
 nav button {
-    color: var(--white);
-    background-color: var(--light-blue);
+    color: var(--ghostWhite);
+    background-color: var(--iceberg);
     border: 0;
     outline: 0;
     padding: 0 10px;
@@ -52,7 +52,7 @@ nav #button3 {
 }
 
 nav button:hover {
-    background-color: var(--medium-blue);
+    background-color: var(--blueYonder);
     cursor: pointer;
 }
 
@@ -61,5 +61,5 @@ nav button:focus {
 }
 
 nav button:active {
-    background-color: var(--dark-blue);
+    background-color: var(--blackCoral);
 }

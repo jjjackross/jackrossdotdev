@@ -41,57 +41,57 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: var(--medium-blue);
-    border: 2px solid var(--dark-blue);
+    background: var(--blueYonder);
+    border: 2px solid var(--blackCoral);
     border-radius: 8px;
     text-align: center;
     padding: 0 2vw
   }
 
 .item .text {
-    background-color: var(--medium-blue);
+    background-color: var(--blueYonder);
     font-family: 'Poppins', sans-serif;
 }
 
 .item h1 {
-    color: var(--gold);
+    color: var(--gunMetal);
     font-weight: 900;
     margin-top: 5px;
     margin-bottom: 10px;
 }
 
 .item p {
-    color: var(--white);
+    color: var(--ghostWhite);
     font-weight: 500;
     margin-bottom: 15px;
 }
 
 .item h4 {
-    color: var(--light-blue);
+    color: var(--iceberg);
     font-weight: 700;
 }
 
 .item h2 {
-    color: var(--white);
+    color: var(--ghostWhite);
     font-weight: 600;
     margin-bottom: 25px;
 }
 
 .item .link {
-    color: var(--white);
+    color: var(--ghostWhite);
     font-weight: 400;
-    background-color: var(--medium-blue);
+    background-color: var(--blueYonder);
     font-size: 1.5em;
     margin-bottom: 10px;
 }
 
 .item .link:hover {
-    color: var(--light-blue);
+    color: var(--iceberg);
     text-decoration: underline;
 }
 
 .item .link:active {
-    color: var(--dark-blue);
+    color: var(--blackCoral);
 }
 
 .link-container {
@@ -102,7 +102,7 @@
     grid-gap: 15px;
     width: 200px;
     height: 100%;
-    background-color: var(--medium-blue);
+    background-color: var(--blueYonder);
 }
 
 .github {
@@ -114,19 +114,19 @@
 }
 
 .link-container svg {
-    background-color: var(--medium-blue);
+    background-color: var(--blueYonder);
 }
 
 .link-container .foreground {
-    fill: var(--white);
+    fill: var(--ghostWhite);
 }
 
 .link-container svg:hover .foreground {
-    fill: var(--light-blue);
+    fill: var(--iceberg);
 }
 
 .link-container svg:active .foreground {
-    fill: var(--dark-blue);
+    fill: var(--blackCoral);
 }
 
 /* ~~~~~~ FOOTER STYLING ~~~~~~ */
@@ -162,27 +162,27 @@ footer {
 }
 
 #github-logo path {
-    fill: var(--medium-blue);
+    fill: var(--blueYonder);
 }
 
 #github-logo:hover path {
-    fill: var(--light-blue);
+    fill: var(--iceberg);
 }
 
 #github-logo:active path {
-    fill: var(--dark-blue);
+    fill: var(--blackCoral);
 }
 
 #linkedin-logo path {
-    fill: var(--medium-blue);
+    fill: var(--blueYonder);
 }
 
 #linkedin-logo:hover path {
-    fill: var(--light-blue);
+    fill: var(--iceberg);
 }
 
 #linkedin-logo:active path {
-    fill: var(--dark-blue);
+    fill: var(--blackCoral);
 }
 
 footer a img {
@@ -192,18 +192,18 @@ footer a img {
 a {
     font-family: 'Poppins', sans-serif;
     font-weight: 200;
-    color: var(--medium-blue);
+    color: var(--blueYonder);
     text-decoration: none;
     font-size: 5vmin;
     grid-column: 1 / 2;
 }
 
 a:hover {
-    color: var(--light-blue);
+    color: var(--iceberg);
     cursor: pointer;
 }
 
 a:active {
-    color: var(--dark-blue);
+    color: var(--blackCoral);
     text-decoration: underline;
 }

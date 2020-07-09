@@ -39,8 +39,8 @@ main {
 }
 
 .block {
-    background-color: var(--medium-blue);
-    border: 2px solid var(--dark-blue);
+    background-color: var(--blueYonder);
+    border: 2px solid var(--blackCoral);
     border-radius: 15px;
 }
 
@@ -63,31 +63,31 @@ span {
 }
 
 h2 {
-    background-color: var(--medium-blue);
+    background-color: var(--blueYonder);
     font-family: 'Poppins', sans-serif;
-    color: var(--white);
+    color: var(--ghostWhite);
     font-weight: 600;
     margin-bottom: 25px;
 }
 
 .a a {
-    background-color: var(--medium-blue);
-    color: var(--white);
+    background-color: var(--blueYonder);
+    color: var(--ghostWhite);
     font-size: 3vmin;
 }
 
 .a a:hover {
-    color: var(--light-blue);
+    color: var(--iceberg);
 }
 
 .a a:active {
-    color: var(--dark-blue);
+    color: var(--blackCoral);
     text-decoration: underline;
 }
 
 .a p, q {
-    background-color: var(--medium-blue);
-    color: var(--white);
+    background-color: var(--blueYonder);
+    color: var(--ghostWhite);
     font-family: 'Poppins', sans-serif;
     margin-bottom: 30px;
 }
@@ -97,7 +97,7 @@ h2 {
 }
 
 .b h2 {
-    color: var(--gold);
+    color: var(--gunMetal);
 }
 
 .b h2:first-child {
@@ -110,13 +110,13 @@ h2 {
 }
 
 .b ul {
-    color: var(--white);
+    color: var(--ghostWhite);
     font-family: 'Poppins', sans-serif;
     margin-left: 25px;
 }
 
 .b ul li {
-    background-color: var(--medium-blue);
+    background-color: var(--blueYonder);
 }
 
 .footer {
@@ -141,43 +141,43 @@ h2 {
 }
 
 #github-logo path {
-    fill: var(--medium-blue);
+    fill: var(--blueYonder);
 }
 
 #github-logo:hover path {
-    fill: var(--light-blue);
+    fill: var(--iceberg);
 }
 
 #github-logo:active path {
-    fill: var(--dark-blue);
+    fill: var(--blackCoral);
 }
 
 #linkedin-logo path {
-    fill: var(--medium-blue);
+    fill: var(--blueYonder);
 }
 
 #linkedin-logo:hover path {
-    fill: var(--light-blue);
+    fill: var(--iceberg);
 }
 
 #linkedin-logo:active path {
-    fill: var(--dark-blue);
+    fill: var(--blackCoral);
 }
 
 a {
     font-family: 'Poppins', sans-serif;
     font-weight: 200;
-    color: var(--medium-blue);
+    color: var(--blueYonder);
     text-decoration: none;
     font-size: 5vmin;
 }
 
 a:hover {
-    color: var(--light-blue);
+    color: var(--iceberg);
     cursor: pointer;
 }
 
 a:active {
-    color: var(--dark-blue);
+    color: var(--blackCoral);
     text-decoration: underline;
 }

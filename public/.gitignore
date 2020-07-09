@@ -46,4 +46,4 @@ testem.log
 Thumbs.db
 
 # Important Shit
-godaddy_ssl_cert/
+/godaddy_ssl_cert

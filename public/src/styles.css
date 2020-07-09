@@ -5,15 +5,15 @@
     padding: 0;
     box-sizing: border-box;
     vertical-align: top;
-    background-color: var(--white);
+    background-color: var(--ghostWhite);
     /* outline: 1px solid pink; */
 }
 
 /* Creating variables for the color palette so I don't have to memorize their hex color codes */
 :root {
-    --dark-blue: #495867;
-    --medium-blue: #577399;
-    --light-blue: #83B0D8;
-    --white: #F7F7FF;
-    --gold: #C4B797;
+    --gunMetal: #212830;
+    --blackCoral: #495867;
+    --blueYonder: #577399;
+    --iceberg: #83B0D8;
+    --ghostWhite: #F7F7FF;
 }

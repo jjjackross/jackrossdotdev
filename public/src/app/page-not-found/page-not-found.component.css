@@ -8,9 +8,9 @@
 }
 
 .foreground {
-    fill: var(--medium-blue);
+    fill: var(--blueYonder);
 }
 
 .background {
-    fill: var(--light-blue);
+    fill: var(--iceberg);
 }
