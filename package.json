@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "ng": "ng",
     "build:ci": "ng build --prod",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
