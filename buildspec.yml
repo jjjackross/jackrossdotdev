@@ -11,4 +11,4 @@ phases:
   build:
     commands:
       - cd public
-      - npm run build:ci
+      - npm run build
