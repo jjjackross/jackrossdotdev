@@ -13,13 +13,3 @@ phases:
   post_build:
     commands:
       - aws s3 sync ./dist/public s3://jackrossdotdev --acl 'public-read' --delete
-
-# artifacts:
-#   files:
-#     - '**/*.html'
-#     - '**/*.js'
-#     - '**/*.ts'
-#     - '**/*.css'
-#     - '**/*.ico'
-#   discard-paths: yes
-#   base-directory: 'dist/public'
