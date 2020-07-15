@@ -12,7 +12,7 @@ phases:
       - npm run build:ci
   post_build:
     commands:
-      - aws s3 sync ./dist/public s3://jackrossdotdev-devopsproduction-buildartifacts --acl 'public-read' --delete
+      - aws s3 sync ./dist/public s3://jackrossdotdev --acl 'public-read' --delete
 
 # artifacts:
 #   files:
