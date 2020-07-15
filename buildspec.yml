@@ -10,13 +10,16 @@ phases:
   build:
     commands:
       - npm run build:ci
+  post_build:
+    commands:
+      - aws s3 sync ./dist/public s3://jackrossdotdev-devopsproduction-buildartifacts --acl 'public-read' --delete
 
-artifacts:
-  files:
-    - '**/*.html'
-    - '**/*.js'
-    - '**/*.ts'
-    - '**/*.css'
-    - '**/*.ico'
-  discard-paths: yes
-  base-directory: 'dist/public'
+# artifacts:
+#   files:
+#     - '**/*.html'
+#     - '**/*.js'
+#     - '**/*.ts'
+#     - '**/*.css'
+#     - '**/*.ico'
+#   discard-paths: yes
+#   base-directory: 'dist/public'
