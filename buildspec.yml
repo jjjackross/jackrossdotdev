@@ -9,4 +9,4 @@ phases:
       - npm install
   build:
     commands:
-      - ng build
+      - npm run ng build --prod
