@@ -1,4 +1,4 @@
-<!-- Creating the nav bar -->
+<!-- Creating the nav bar. Since it is above router-outlet it will load onto the page visually above all other html. -->
 <div id="nav-container">
   <nav>
     <button class="poppins" [routerLink]="['/landing-page']">JACK ROSS</button>
@@ -9,6 +9,5 @@
   </nav>
 </div>
 
-
-<!-- Don't add anything below this comment! -->
+<!-- Any code after router-outlet will load onto the page visually below all other html. -->
 <router-outlet></router-outlet>
