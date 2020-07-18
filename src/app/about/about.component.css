@@ -119,51 +119,6 @@ h2 {
     background-color: var(--blueYonder);
 }
 
-.footer {
-    margin-top: 20px;
-}
-
-.resume {
-    grid-area: resume;
-}
-
-#github-logo {
-    grid-area: github;
-}
-
-#linkedin-logo {
-    grid-area: linkedin;
-}
-
-.social-icon {
-    width: 7vmin;
-    height: 7vmin;
-}
-
-#github-logo path {
-    fill: var(--blueYonder);
-}
-
-#github-logo:hover path {
-    fill: var(--iceberg);
-}
-
-#github-logo:active path {
-    fill: var(--blackCoral);
-}
-
-#linkedin-logo path {
-    fill: var(--blueYonder);
-}
-
-#linkedin-logo:hover path {
-    fill: var(--iceberg);
-}
-
-#linkedin-logo:active path {
-    fill: var(--blackCoral);
-}
-
 a {
     font-family: 'Poppins', sans-serif;
     font-weight: 200;

@@ -1,0 +1,78 @@
+/* ~~~~~~ FOOTER STYLING ~~~~~~ */
+footer {
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr .5fr .5fr .5fr .5fr;
+    grid-template-areas: 
+    "resume . . icon icon icon icon";
+}
+
+.resume {
+    grid-area: resume;
+}
+
+.icon {
+    grid-area: icon;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#github-logo {
+    grid-column: 6 / 7;
+}
+
+#linkedin-logo {
+    grid-column: 7 / 8;
+}
+
+.social-icon {
+    width: 7vmin;
+    height: 7vmin;
+}
+
+#github-logo path {
+    fill: var(--blueYonder);
+}
+
+#github-logo:hover path {
+    fill: var(--iceberg);
+}
+
+#github-logo:active path {
+    fill: var(--blackCoral);
+}
+
+#linkedin-logo path {
+    fill: var(--blueYonder);
+}
+
+#linkedin-logo:hover path {
+    fill: var(--iceberg);
+}
+
+#linkedin-logo:active path {
+    fill: var(--blackCoral);
+}
+
+footer a img {
+    margin-right: 0px;
+}
+
+a {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+    color: var(--blueYonder);
+    text-decoration: none;
+    font-size: 5vmin;
+    grid-column: 1 / 2;
+}
+
+a:hover {
+    color: var(--iceberg);
+    cursor: pointer;
+}
+
+a:active {
+    color: var(--blackCoral);
+    text-decoration: underline;
+}
