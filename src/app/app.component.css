@@ -7,7 +7,7 @@
     /* outline: 1px solid pink; */
 }
 
-#nav-container {
+/* #nav-container {
     padding: 0 5vw;
     background-clip: padding-box;
     background-color: var(--iceberg);
@@ -62,4 +62,131 @@ nav button:focus {
 
 nav button:active {
     background-color: var(--blackCoral);
+} */
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+#nav-container {
+    padding: 0 5vw;
+    background-clip: padding-box;
+    background-color: var(--iceberg);
+}
+nav {
+    /* display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr 1fr; */
+    background-color: var(--iceberg);
+    /* background-color: red; */
+    width: auto;
+    line-height: 4px;
+    /* gap: 5vmin; */
+}
+
+nav button {
+    color: var(--ghostWhite);
+    background-color: var(--iceberg);
+    border: 0;
+    outline: 0;
+    padding: 0 10px;
+}
+nav button.poppins {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+nav button.raleway {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+}
+
+nav button:hover {
+    background-color: var(--blueYonder);
+    cursor: pointer;
+}
+nav button:focus {
+    text-decoration: underline;
+}
+nav button:active {
+    background-color: var(--blackCoral);
+}
+
+label {
+    font-size: 9vmin;
+    color: var(--ghostWhite);
+    background-color: var(--iceberg);
+    line-height: 100%;
+    display: none;
+}
+
+#toggle {
+    display: none;
+}
+
+.menu {
+    display: flex;
+    background-color: var(--iceberg);
+    align-self: center;
+    float: right;
+}
+
+.menu button {
+    text-align: middle;
+    /* line-height: 263%;
+    margin: 0 25px; */
+}
+
+@media screen and (min-width: 1024px) { 
+    nav button.poppins {
+        font-size: 7vmin;
+    }
+    nav button.raleway {
+        font-size: 4vmin;
+    }
+    .menu button {
+        /* text-align: middle; */
+        line-height: 263%;
+        margin: 0 25px;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    nav button.poppins {
+        font-size: 6vmin;
+    }
+    nav button.raleway {
+        font-size: 3vmin;
+    }
+    .menu button {
+        text-align: middle;
+        line-height: 303%;
+        margin: 0 8px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    label {
+        display: inline-block;
+        cursor: pointer;
+        width: 38px;
+        float: right;
+    }
+    label:hover {
+        background-color: var(--blueYonder);
+    }
+    label:active {
+        background-color: var(--blackCoral);
+    }
+    .menu {
+        text-align: center;
+        width: 100%;
+        display: none;
+    }
+    #toggle:checked + .menu {
+        display: block;
+    }
+    .menu button {
+        display: block;
+        width: 100%;
+        margin: 0;
+    }
+    .menu button:not(:last-child) {
+        border-bottom: 1px solid var(--blackCoral);
+    }
 }

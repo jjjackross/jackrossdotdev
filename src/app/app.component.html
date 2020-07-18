@@ -1,5 +1,5 @@
 <!-- Creating the nav bar. Since it is above router-outlet it will load onto the page visually above all other html. -->
-<div id="nav-container">
+<!-- <div id="nav-container">
   <nav>
     <button class="poppins" [routerLink]="['/landing-page']">JACK ROSS</button>
 
@@ -7,7 +7,27 @@
     <button class="raleway" id="button2" [routerLink]="['/about']">about</button>
     <button class="raleway" id="button3" [routerLink]="['/contact']">contact</button>
   </nav>
+</div> -->
+
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+
+<div id="nav-container">
+  <nav>
+    <button class="poppins" [routerLink]="['/landing-page']">JACK ROSS</button>
+
+    <label for="toggle">&#9776;</label>
+    <input type="checkbox" id="toggle" />
+    <div class="menu">
+      <button class="raleway" [routerLink]="['/projects']">projects</button>
+      <button class="raleway" [routerLink]="['/about']">about</button>
+      <button class="raleway" [routerLink]="['/contact']">contact</button>
+    </div>
+  </nav>
 </div>
 
-<!-- Any code after router-outlet will load onto the page visually below all other html. -->
-<router-outlet></router-outlet>
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+
+<!-- Any code after <router-outlet> will load onto the page visually below all other html. -->
+<!-- <router-outlet></router-outlet> -->
