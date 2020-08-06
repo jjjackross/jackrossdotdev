@@ -3,83 +3,20 @@
     padding: 0;
     box-sizing: border-box;
     vertical-align: top;
-    /* font-family: Arial, Helvetica, sans-serif; */
     /* outline: 1px solid pink; */
 }
 
-/* #nav-container {
-    padding: 0 5vw;
-    background-clip: padding-box;
-    background-color: var(--iceberg);
-}
-
-nav {
-    display: grid;
-    grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
-    background-color: var(--iceberg);
-    width: auto;
-    gap: 5vmin;
-}
-
-nav button {
-    color: var(--ghostWhite);
-    background-color: var(--iceberg);
-    border: 0;
-    outline: 0;
-    padding: 0 10px;
-}
-
-nav button.poppins {
-    font-family: 'Poppins', sans-serif;
-    font-size: 7vmin;
-    font-weight: 700;
-}
-
-nav button.raleway {
-    font-family: 'Raleway', sans-serif;
-    font-size: 4vmin;
-    font-weight: 500;
-}
-
-nav #button1 {
-    grid-column: 3;
-}
-nav #button2 {
-    grid-column: 4;
-}
-nav #button3 {
-    grid-column: 5;
-}
-
-nav button:hover {
-    background-color: var(--blueYonder);
-    cursor: pointer;
-}
-
-nav button:focus {
-    text-decoration: underline;
-}
-
-nav button:active {
-    background-color: var(--blackCoral);
-} */
-
-/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 #nav-container {
     padding: 0 5vw;
     background-clip: padding-box;
     background-color: var(--iceberg);
 }
-nav {
-    /* display: grid;
-    grid-template-columns: 2fr 1fr 1fr 1fr 1fr; */
-    background-color: var(--iceberg);
-    /* background-color: red; */
-    width: auto;
-    line-height: 4px;
-    /* gap: 5vmin; */
-}
 
+nav {
+    background-color: var(--iceberg);
+    width: auto;
+    line-height: 100%;
+}
 nav button {
     color: var(--ghostWhite);
     background-color: var(--iceberg);
@@ -94,14 +31,11 @@ nav button.poppins {
 nav button.raleway {
     font-family: 'Raleway', sans-serif;
     font-weight: 500;
+    border: none;
 }
-
 nav button:hover {
     background-color: var(--blueYonder);
     cursor: pointer;
-}
-nav button:focus {
-    text-decoration: underline;
 }
 nav button:active {
     background-color: var(--blackCoral);
@@ -114,22 +48,21 @@ label {
     line-height: 100%;
     display: none;
 }
-
 #toggle {
     display: none;
 }
-
 .menu {
     display: flex;
     background-color: var(--iceberg);
     align-self: center;
     float: right;
 }
-
 .menu button {
     text-align: middle;
-    /* line-height: 263%;
-    margin: 0 25px; */
+}
+
+.menu button:last-child {
+    margin-right: 0;
 }
 
 @media screen and (min-width: 1024px) { 
@@ -140,9 +73,8 @@ label {
         font-size: 4vmin;
     }
     .menu button {
-        /* text-align: middle; */
         line-height: 263%;
-        margin: 0 25px;
+        margin: 0 2vw;
     }
 }
 
@@ -151,11 +83,11 @@ label {
         font-size: 6vmin;
     }
     nav button.raleway {
-        font-size: 3vmin;
+        font-size: 2.95vmin;
     }
     .menu button {
         text-align: middle;
-        line-height: 303%;
+        line-height: 300%;
         margin: 0 8px;
     }
 }
@@ -163,9 +95,15 @@ label {
 @media screen and (max-width: 480px) {
     label {
         display: inline-block;
+        vertical-align: middle;
         cursor: pointer;
-        width: 38px;
+        width: auto;
+        padding: 0 2vw;
+        font-size: 15vw;
         float: right;
+    }
+    label:focus {
+        outline: none;
     }
     label:hover {
         background-color: var(--blueYonder);
@@ -184,9 +122,32 @@ label {
     .menu button {
         display: block;
         width: 100%;
+        line-height: 8vmax;
         margin: 0;
     }
     .menu button:not(:last-child) {
-        border-bottom: 1px solid var(--blackCoral);
+        border-bottom: 1px solid var(--blueYonder);
+    }
+    .menu button:last-child {
+        border-bottom: 1px solid var(--blueYonder);
+    }
+    .menu button:first-child {
+        border-top: 1px solid var(--blueYonder);
+    }
+    
+    nav {
+        height: 15.2vw;
+    }
+    nav button.raleway {
+        font-size: 4.5vw;
+    }
+
+    nav button.poppins {
+        font-size: 10vw;
+        padding: 0 2vw;
+    }
+    #nav-container {
+        padding: 0;
+        /* border-bottom: 2px solid var(--iceberg); */
     }
 }
