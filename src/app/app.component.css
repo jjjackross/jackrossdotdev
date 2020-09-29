@@ -136,7 +136,8 @@ label {
     }
     
     nav {
-        height: 15.2vw;
+        /* height: 15.2vw; */
+        height: 15.3vw;
     }
     nav button.raleway {
         font-size: 4.5vw;
