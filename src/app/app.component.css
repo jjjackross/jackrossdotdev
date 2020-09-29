@@ -99,7 +99,7 @@ label {
         cursor: pointer;
         width: auto;
         padding: 0 2vw;
-        font-size: 15vw;
+        font-size: 15.6vw;
         float: right;
     }
     label:focus {
@@ -136,7 +136,6 @@ label {
     }
     
     nav {
-        /* height: 15.2vw; */
         height: 15.6vw;
     }
     nav button.raleway {
