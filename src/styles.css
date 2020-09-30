@@ -7,6 +7,7 @@
     box-sizing: border-box;
     vertical-align: top;
     background-color: var(--ghostWhite);
+    -webkit-tap-highlight-color: white;
     /* outline: 1px solid pink; */
 }
 

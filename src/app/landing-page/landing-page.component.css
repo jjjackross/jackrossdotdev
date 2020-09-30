@@ -18,3 +18,10 @@ h1 {
     text-shadow: -3px 3px 3px rgba(73,88,103,.4);
     /* margin-left: 2.5vw; */
 }
+
+@media screen and (max-width: 480px) {
+    main {
+        text-align: center;
+        margin-top: 3vh;
+    }
+}
