@@ -99,6 +99,7 @@ label {
         cursor: pointer;
         width: auto;
         padding: 0 2vw;
+        margin: auto;
         font-size: 15.6vw;
         float: right;
     }
