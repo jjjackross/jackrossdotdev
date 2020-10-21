@@ -190,6 +190,10 @@ a:active {
         color: var(--blackCoral);
     }
 
+    .item .accordion a {
+        background-color: var(--blueYonder);
+    }
+
     .accordion_arrow {
         color: var(--gunMetal);
         background-color: var(--blueYonder);
