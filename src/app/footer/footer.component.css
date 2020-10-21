@@ -62,9 +62,12 @@ a:active {
     }
 }
 
-/* @media screen and (max-width: 1023px) {
-
-} */
+@media screen and (max-width: 1023px) and (min-width: 481px) {
+    a:not(:first-child) {
+        float: right;
+        margin-left: 4vw;
+    }
+}
 
 @media screen and (max-width: 480px) {
     footer {

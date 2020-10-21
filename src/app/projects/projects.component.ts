@@ -22,5 +22,24 @@ export class ProjectsComponent implements OnInit {
 
     const menu = <HTMLFormElement>document.getElementById('toggle');
     menu.checked = false;
+
+    const accordion1_top_nav = <HTMLElement>document.getElementsByClassName('accordion_nav')[0];
+    const accordion1_bot_nav = <HTMLElement>document.getElementsByClassName('accordion_nav')[1];
+    const accordion1 = <HTMLElement>document.getElementById('accordion1');
+    accordion1_top_nav.addEventListener('click', () => {
+      accordion1.classList.toggle('accordion_visible')
+    });
+    accordion1_bot_nav.addEventListener('click', () => {
+      accordion1.classList.toggle('accordion_visible')
+    });
+
+    // document.querySelectorAll('accordion_nav').forEach(nav => {
+    //   // const accordionContent = nav.nextElementSibling;
+    //   const accordionContent = <HTMLElement>document.getElementById('accordion');
+    //   nav.addEventListener('click', () => {
+
+    //     accordionContent.classList.toggle('accordion_visible');
+    //   });
+    // });
   }
 }

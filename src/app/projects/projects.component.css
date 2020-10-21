@@ -7,6 +7,14 @@
     /* outline: 1px solid pink; */
 }
 
+#spaghetti { /* fixes interaction between mobile menu & webpage */
+    color: var(--ghostWhite);
+    font-size: 1px;
+    margin: 0;
+    padding: 0;
+    line-height: 0;
+}
+
 #body-container {
     padding: 0 5vw;
 }
@@ -48,14 +56,25 @@
     padding: 0 2vw
   }
 
+.accordion {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--blueYonder);
+    text-align: center;
+}
+
 .item .text {
     background-color: var(--blueYonder);
     font-family: 'Poppins', sans-serif;
 }
 
-.item h1 {
+.item h1, .project_title {
     color: var(--gunMetal);
     font-weight: 900;
+    font-size: 4vmax;
     margin-top: 5px;
     margin-bottom: 10px;
 }
@@ -74,7 +93,7 @@
 .item h2 {
     color: var(--ghostWhite);
     font-weight: 600;
-    margin-bottom: 25px;
+    margin-bottom: 15px;
 }
 
 .item .link {
@@ -146,4 +165,39 @@ a:hover {
 a:active {
     color: var(--blackCoral);
     text-decoration: underline;
+}
+
+@media screen and (min-width: 781px) {
+    #accordion_arrow {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .hs {
+        display: block;
+    }
+
+    .item {
+        margin-bottom: 20px;
+    }
+
+    .accordion {
+        display: none;
+    }
+
+    .item .accordion_nav:active {
+        color: var(--blackCoral);
+    }
+
+    .accordion_arrow {
+        color: var(--gunMetal);
+        background-color: var(--blueYonder);
+        padding: 0;
+        margin: 0;
+    }
+
+    .accordion_visible {
+        display: flex;
+    }
 }
